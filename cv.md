@@ -18,3 +18,6 @@ Karelian State Pedagogical Academy, the faculty of psychology (specialist), 2011
 I took a frontend development course in School of a young programmer and received a certificate.
 ## Language skills
 B1
+## Sample code
+Please see the first examples of my code:
+Vue.js](https://github.com/angelinaivanova16/firstvuej)
