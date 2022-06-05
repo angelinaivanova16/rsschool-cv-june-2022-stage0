@@ -16,9 +16,10 @@ h1 {
 }
 h2 {
   font-size: 1.5vw;
+  color: #818C81;
 }
 
-p, li, pre {
+p, li, pre, a {
   font-size: 1vw;
 }
 .list {
@@ -31,9 +32,9 @@ li {
 .container {
   font-family: "Roboto-Regular";
   margin: auto;
-  width: 1200px;
+  width: 1300px;
   background-color: white;
-  color: gray;
+  color: black;
 }
 .nav-list {
   display: flex;
@@ -44,7 +45,7 @@ li {
 }
 .header-link {
   text-decoration: none;
-  color: gray;
+  color: #818C81;
 }
 .up {
   width: 70%;
@@ -78,6 +79,16 @@ main {
   grid-column: 2/4;
   background-color: white;
   padding: 10px 10px;
+}
+.projects-link {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #818C81;
+}
+.text-link {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: underline;
+  color: gray;
 }
 footer {
   display: flex;
