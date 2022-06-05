@@ -1,13 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>CV</title>
- <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CV</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
- 
+    <div class="container">
+        <header>
+            <input class="burger" type="checkbox" id="burger">
+            <label for="burger"></label>
+						<nav class="main-nav">
+							<ul class="nav-list">
+								<li><a class="header-link" href="#sum">Summary</a></li>
+								<li><a class="header-link" href="#skills">Skills</a></li>
+								<li><a class="header-link" href="#edu">Education</a></li>
+								<li><a class="header-link" href="#exp">Experience</a></li>
+								<li><a class="header-link" href="#code">Code example</a></li>
+								<li><a class="header-link" href="#lang">Languages</a></li>
+							</ul>
+						</nav>
+            <div class="up">
+              <img class="avatar" src="img/foto.jpg" alt="avatar">
+              <div>
+                  <h1 class="name">Angelina Ivanova</h1>
+                  <h2>Junior Front-End Developer (Vue.js)</h2>
+              </div>
+            </div>
+        </header>
+        <main>
+            <section class="item">
+                <div class="left-side">
+                    <h2>Contacts</h2>
+                    <ul class="list">
+                        <li>+79114052449</li>
+                        <li>angelinaivanova16@gmail.com</li>
+                    </ul>
+                    <h2 id="skills">Skills</h2>
+                        <ul class="list">
+                            <li>I am good at HTML, CSS.</li>
+                            <li>I`m familiar with JavaScript and Vue.</li>
+                            <li>I have some knowledge of version control (git).</li>
+                        </ul>
+                    <h2 id="lang">Languages</h2>
+                        <ul class="list">
+                            <li>Russian - native speaker</li>
+                            <li>English - B1</li>
+                        </ul>
+							<img class="sefr" src="img/sefr.png" alt="certificate sefr">
+                </div>
+            </section>
+            <section class="item">
+                <div>
+                    <h2 id="sum">Summary</h2>
+                    <p>I want to study at The Rolling Scopes School in order to structure my knowledge and gain new ones. I am looking for a job or internship as a front-end developer. My goal is to get work experience. I get real pleasure from solving problems, from constant development and training, so I chose this profession. Good memory, flexibility of thinking, ability to work in multitasking conditions and quickly find information on the Internet help me. I am a quick learner and I am not afraid of difficulties.</p>
+                </div>
+                <div>
+                    <h2 id="edu">Education</h2>
+                    <p>Karelian State Pedagogical Academy, the faculty of psychology (specialist), 2011.</p>    
+                </div>
+                <div>
+                    <h2 id="exp">Experience</h2>
+                    <p>I took a frontend development course in School of a young programmer and received a certificate.</p>
+                </div>
+                <div>
+                    <h2 id="code">Code example</h2>
+                    <pre>
+                        <code>
+let firstNumber = +prompt("Enter the first number");
+let sign = prompt("Enter a mathematical sign");
+let secondNumber = +prompt("Enter the second number");
+switch (sign) {
+	case "+": {
+		document.write(firstNumber + secondNumber)
+		break;
+	}
+	case "-": {
+		document.write(firstNumber - secondNumber)
+		break;
+	}
+	case "*": {
+		document.write(firstNumber * secondNumber)
+		break;
+	}
+	case "/": {
+		document.write(firstNumber / secondNumber)
+		break;
+	}
+	default: {
+		document.write("Error")
+	}
+}
+                        </code>
+                    </pre>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p><a class="footer-link" href="https://github.com/angelinaivanova16">Visit my GitHub</a></p>
+            <p>© 2022</p>
+            <p><a class="footer-link" href="https://rs.school/js-stage0/"><img class="logo" src="img/rs_school_js.svg" alt="logo"></a></p>
+        </footer>
+    </div>
+    <script>
+      console.log(`1. студент засабмитил в rs app ссылку на своё CV, задеплоенное на gh-pages +10
+2. вёрстка валидная +10 для проверки валидности вёрстки используйте сервис https://validator.w3.org/
+3. вёрстка семантическая +20. 
+В коде странице присутствуют и используются по назначению следующие элементы:
+Под "используются по назначению" имеется в виду, что у элементов есть какое-то содержание, соответствующее типу элемента, а не добавлены пустые теги для получения баллов. Правильность использования элементов не проверяется и на балл не влияет.
+* header, main, footer +5
+* элемент nav +5
+* только один заголовок h1 +5
+* заголовки h2 +5
+4. в footer есть ссылка на гитхаб автора работы, год создания приложения, логотип курса со ссылкой на курс +10
+Если ссылка в футере ведёт на курс stage0, это не ошибка.
+5. для оформления СV используются css-стили +10
+6. при уменьшении масштаба страницы браузера вёрстка размещается по центру по горизонтали, а не сдвигается в сторону +10
+7. на странице СV есть фото или аватарка автора, пропорции изображения не искажены, у изображения есть атрибут alt +10
+8. навигация, контакты для связи и перечень навыков оформлены в виде списка ul > li или ul > li > a +10
+Также допускается использование нумерованого списка ol > li или ol > li > a
+9. Содержание CV +25
+CV содержит:
+* краткую информацию о себе +5
+* контакты для связи +5
+* перечень навыков +5
+* пример кода. Код добавляется при помощи символов и тегов, а не картинкой +5
+* перечень выполненных учебных проектов со ссылками на исходный код или страницу приложения - не сделано
+* информацию об образовании и уровне английского +5
+10.CV выполнено на английском языке +10
+125/130`
+      );
+    </script>
 </body>
 </html>
