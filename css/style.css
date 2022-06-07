@@ -7,6 +7,9 @@
   font-family: Roboto-Italic;
   src: url(fonts/Roboto/Roboto-Italic.ttf);
 }
+html {
+  scroll-behavior: smooth;
+ }
 body {
   background-color: #B3B9B3;
   margin: 0;
@@ -27,9 +30,9 @@ li {
 .container {
   font-family: "Roboto-Regular";
   margin: auto;
-  width: 1300px;
+  max-width: 900px;
   background-color: white;
-  color: black;
+  color: rgb(77, 70, 70);
 }
 .nav-list {
   display: flex;
@@ -150,8 +153,15 @@ footer {
     }
     
 
-  .up, main {
-    display: block;
+  .up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
   }
   .sefr {
     display: none;
@@ -172,7 +182,7 @@ footer {
 
   }
   .avatar {
-    width: 45%;
-    padding: 10px;
+    width: 60%;
+    /* padding: 10px; */
   }
 }
